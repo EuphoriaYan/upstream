@@ -1,0 +1,20 @@
+--------------------------------------------------------------------------------
+dataset_root: /data/pku-orc-train/数据增强封装/train
+opt.select_data: ['shufa_lmdb', 'songhei_aug_sample']
+opt.batch_ratio: ['0.125', '0.875']
+--------------------------------------------------------------------------------
+dataset_root:    /data/pku-orc-train/数据增强封装/train	 dataset: shufa_lmdb
+sub-directory:	/shufa_lmdb	 num samples: 198589
+num total samples of shufa_lmdb: 198589 x 1.0 (total_data_usage_ratio) = 198589
+num samples of shufa_lmdb per batch: 1024 x 0.125 (batch_ratio) = 128
+--------------------------------------------------------------------------------
+dataset_root:    /data/pku-orc-train/数据增强封装/train	 dataset: songhei_aug_sample
+sub-directory:	/songhei_aug_sample	 num samples: 5282886
+num total samples of songhei_aug_sample: 5282886 x 1.0 (total_data_usage_ratio) = 5282886
+num samples of songhei_aug_sample per batch: 1024 x 0.875 (batch_ratio) = 896
+--------------------------------------------------------------------------------
+Total_batch_size: 128+896 = 1024
+--------------------------------------------------------------------------------
+dataset_root:    /data/pku-orc-train/数据增强封装/shufa_lmdb_dev	 dataset: /
+sub-directory:	/.	 num samples: 13251
+--------------------------------------------------------------------------------
